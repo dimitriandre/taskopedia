@@ -7,6 +7,8 @@ const footerStyle = {
     margin: 0
 };
 
-export default function Footer() {
+const Footer = () => {
     return <p style={footerStyle}>Happy coding</p>;
   }
+
+export default Footer;
