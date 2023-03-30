@@ -35,6 +35,7 @@ root.render(
   <div>
     <Header />
     <MainBody />
+    <div className="container row">Students Enrolled</div>
     <Student
       experience={2}
       name="Emmanuel Macron"
