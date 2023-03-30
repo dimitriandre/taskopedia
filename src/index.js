@@ -8,8 +8,13 @@ function MainHeader() {
   return <h1 className="heading1">REACT COURSE</h1>;
 }
 
+const subHeaderStyle = {
+  color: "blueviolet",
+  backGroundColor: "lightgray",
+};
+
 function SubHeader() {
-  return <p>This will be an exciting course.</p>;
+  return <p style={subHeaderStyle}>This will be an exciting course.</p>;
 }
 
 function Header() {
@@ -22,12 +27,15 @@ function Header() {
 }
 
 function MainBody() {
+  const whatWeWillLearn = "React JS";
   return (
     <div>
-      <p>In this course, we will learn react js by building TaskOPedia!</p>
+      <p>
+        In this course, we will learn {whatWeWillLearn} by building TaskOPedia!
+      </p>
       <ul>
-        <li>Call Ben</li>
-        <li>Go to Walmart</li>
+        <li>Basic Foundation</li>
+        <li>Functional and Class Components</li>
       </ul>
     </div>
   );
