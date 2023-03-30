@@ -39,6 +39,10 @@ function MainBody() {
         <li>Basic Foundation</li>
         <li>Functional and Class Components</li>
       </ul>
+      {/*<div>
+        Enter Task :{" "}
+        <input maxLength={5} readOnly={false} placeholder="Ben"></input>
+      </div>*/}
     </div>
   );
 }
