@@ -1,7 +1,9 @@
+import React from "react";
 import Student from "./Components/Students/Student";
 import StudentReview from "./Components/Students/StudentReview";
 
-function MainBody() {
+class MainBody extends React.Component {
+  render() {
     const whatWeWillLearn = "React JS";
     const lectureCount = 3;
     return (
@@ -47,5 +49,6 @@ function MainBody() {
       </div>
     );
   }
+}
 
 export default MainBody;
