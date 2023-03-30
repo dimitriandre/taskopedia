@@ -3,8 +3,21 @@ import ReactDOM from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function HeaderContent() {
-  return <h1>REACT COURSE</h1>;
+function MainHeader() {
+  return <h1 className="text-primary">REACT COURSE</h1>;
+}
+
+function SubHeader() {
+  return <p>This will be an exciting course.</p>;
+}
+
+function Header() {
+  return (
+    <div>
+      <MainHeader></MainHeader>
+      <SubHeader></SubHeader>
+    </div>
+  );
 }
 
 function MainBody() {
@@ -15,19 +28,18 @@ function MainBody() {
         <li>Call Ben</li>
         <li>Go to Walmart</li>
       </ul>
-      <p>Happy coding</p>
     </div>
   );
 }
 
-function FooterContent() {
+function Footer() {
   return <p>Happy coding</p>;
 }
 
 root.render(
   <div>
-    <HeaderContent />
+    <Header />
     <MainBody />
-    <FooterContent />
+    <Footer />
   </div>
 );
