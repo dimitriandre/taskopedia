@@ -1,23 +1,22 @@
-import { faker } from '@faker-js/faker';
-
 export default function Students(props) {
-    return (
-      <div className="container p-4">
-        <div className="row">Students enrolled</div>
-        <div className="row border">
-          <div className="col-2">
-            <img
-              src={props.headshot}
-              className="w-100"
-            ></img>
-          </div>
-          <div className="col-10">
-            {props.name}
-            <br />
-            Programming Experience {props.experience} years
-          </div>
+  return (
+    <div className="col-4 p-4">
+      <div className="row border">
+        <div className="col-2">
+          <img
+            src={props.headshot}
+            className="w-100 py-2"
+          ></img>
+        </div>
+        <div className="col-8">
+          {props.name}
+          <br />
+          Coding Experience {props.experience} years
+        </div>
+        <div className="col-2">
+          {props.children} {/* this will render the StudentReview component */}
         </div>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}

@@ -1,4 +1,4 @@
-import logo from "./images/react.svg"
+import logo from "../images/react.svg"
 
 function MainHeader() {
     return (
@@ -10,12 +10,15 @@ function MainHeader() {
 }
 
 const subHeaderStyle = {
-    color: "blueviolet",
-    backGroundColor: "lightgray",
+    color: "black",
+    fontWeight: "bold", 
+    backgroundColor: "lightgray",
+    padding: 4
+
 };
 
 function SubHeader() {
-    return <p style={subHeaderStyle}>This will be an exciting course.</p>;
+    return <p style={subHeaderStyle} className="text-center">This will be an exciting course.</p>;
 }
 
 export default function Header() {
