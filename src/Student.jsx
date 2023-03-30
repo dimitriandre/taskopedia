@@ -1,3 +1,5 @@
+import { faker } from '@faker-js/faker';
+
 export default function Students(props) {
     return (
       <div className="container p-4">
@@ -5,8 +7,8 @@ export default function Students(props) {
         <div className="row border">
           <div className="col-2">
             <img
-              src={`https://ui-avatars.com/api/?name=${props.name}`}
-              classname="w-100"
+              src={props.headshot}
+              className="w-100"
             ></img>
           </div>
           <div className="col-10">

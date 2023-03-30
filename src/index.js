@@ -35,10 +35,26 @@ root.render(
   <div>
     <Header />
     <MainBody />
-    <Student experience={2} name="Emmanuel Macron" />
-    <Student experience={5} name="Angel Patrice" />
-    <Student experience={7} name="Angel Patrice" />
-    <Student experience={8} name="Kia Cool" />
+    <Student
+      experience={2}
+      name="Emmanuel Macron"
+      headshot="https://api.lorem.space/image/face?w=150&h=150"
+    />
+    <Student
+      experience={5}
+      name="Angel Patrice"
+      headshot="https://api.lorem.space/image/face?w=150&h=155"
+    />
+    <Student
+      experience={7}
+      name="Angel Patrice"
+      headshot="https://api.lorem.space/image/face?w=150&h=156"
+    />
+    <Student
+      experience={8}
+      name="Kia Cool"
+      headshot="https://api.lorem.space/image/face?w=150&h=159"
+    />
     <Footer />
   </div>
 );
