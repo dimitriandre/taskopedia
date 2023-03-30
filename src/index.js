@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./CSS/style.css";
 import Header from "./Header";
-import Students from "./Students";
+import Student from "./Student";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -35,7 +35,10 @@ root.render(
   <div>
     <Header />
     <MainBody />
-    <Students />
+    <Student experience={2} name="Emmanuel Macron" />
+    <Student experience={5} name="Angel Patrice" />
+    <Student experience={7} name="Angel Patrice" />
+    <Student experience={8} name="Kia Cool" />
     <Footer />
   </div>
 );
